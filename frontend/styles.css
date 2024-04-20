@@ -1,0 +1,107 @@
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles pour le formulaire */
+.form-container {
+  margin-bottom: 20px; /* Ajouter de l'espace en bas du formulaire */
+}
+
+.form-container input,
+.form-container button {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+
+/* Styles pour la liste d'éléments */
+.item-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.item a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #3e0a1b;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles pour les cartes d'éléments de la liste */
+.item-card {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px); /* Largeur de la carte, 50% de la largeur du conteneur - marges */
+  float: left; /* Alignement en ligne pour afficher plusieurs cartes par ligne */
+}
+
+.item-card h2 {
+  text-align: center; /* Centrer le texte à l'intérieur de la carte */
+  margin-bottom: 5px;
+}
+
+.item-card p {
+  margin-bottom: 10px;
+  text-align: center; /* Centrer le texte à l'intérieur de la carte */
+}
+
+.item-card button {
+  background-color: #212874; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  border: none; /* Supprimer la bordure */
+  border-radius: 3px; /* Coins arrondis */
+  padding: 8px 12px; /* Espacement interne */
+  cursor: pointer; /* Curseur au survol */
+  transition: background-color 0.3s ease; /* Animation de transition */
+  display: inline-block; /* Pour occuper seulement l'espace nécessaire */
+  margin: 0 5px; /* Ajoutez une marge horizontale pour séparer les boutons */
+
+}
+
+.item-card .button-container {
+  display: flex; /* Utiliser flexbox pour aligner les boutons */
+  justify-content: center; /* Centrer horizontalement les éléments dans le conteneur */
+  margin-top: 10px; /* Ajoutez de l'espace au-dessus des boutons */
+}
+
+.item-card button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
